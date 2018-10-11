@@ -16,9 +16,7 @@ export class EditorProvider extends Component {
   render () {
     return (
       <EditorContext.Provider
-        value={{
-          state: this.state
-        }}
+        value={this.state}
       >
         { this.props.children }
       </EditorContext.Provider>

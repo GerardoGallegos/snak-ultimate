@@ -89,9 +89,7 @@ export class ProjectProvider extends Component {
   render () {
     return (
       <ProjectContext.Provider
-        value={{
-          state: this.state
-        }}
+        value={this.state}
       >
         { this.props.children }
       </ProjectContext.Provider>
